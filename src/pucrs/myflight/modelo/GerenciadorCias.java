@@ -13,6 +13,10 @@ public class GerenciadorCias {
 		empresas.add(cia);
 	}
 
+	// 
+	// é importante usar foreach sempre que possível
+	// se acostume a usar!!!
+	//
 	public CiaAerea buscarPorCodigo(String cod) {
 		for (CiaAerea a : empresas) {
 			if (a.getCodigo().equals(cod))
