@@ -14,8 +14,7 @@ public class GerenciadorCias {
 	}
 
 	public CiaAerea buscarPorCodigo(String cod) {
-		for (int i=0; i<empresas.size(); i++) {
-			CiaAerea a = empresas.get(i);
+		for (CiaAerea a : empresas) {
 			if (a.getCodigo().equals(cod))
 				return a;
 		}
