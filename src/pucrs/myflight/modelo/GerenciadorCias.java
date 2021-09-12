@@ -13,6 +13,11 @@ public class GerenciadorCias {
 		empresas.add(cia);
 	}
 
+	/***
+	 * 
+	 * @param	codigo de compania para pesquisa 
+	 * @return	CiaAerea que contém aquele codigo
+	 */
 	public CiaAerea buscarPorCodigo(String cod) {
 		for (CiaAerea a : empresas) {
 			if (a.getCodigo().equals(cod))
